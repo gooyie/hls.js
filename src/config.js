@@ -8,6 +8,7 @@ import BufferController from  './controller/buffer-controller';
 import CapLevelController from  './controller/cap-level-controller';
 import FPSController from './controller/fps-controller';
 import XhrLoader from './utils/xhr-loader';
+import PXhrLoader from './letv/p-xhr-loader';
 //import FetchLoader from './utils/fetch-loader';
 //#if altaudio
 import AudioTrackController from './controller/audio-track-controller';
@@ -66,7 +67,7 @@ export var hlsDefaultConfig = {
       loader: XhrLoader,
       //loader: FetchLoader,
       fLoader: undefined,
-      pLoader: undefined,
+      pLoader: PXhrLoader,
       xhrSetup: undefined,
       fetchSetup: undefined,
       abrController: AbrController,
